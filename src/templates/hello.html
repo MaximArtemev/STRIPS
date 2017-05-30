@@ -1,0 +1,35 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello World!</h1>
+{% endif %}
+
+<h1>Здесь сейчас пока ничего нет</h1>
+
+<h2> Ожидается что здесь будет привествие</h2>
+
+<table>
+    <tr>
+        <td>
+            <b>Write domain</b>
+            <input type="text" name="domain" id="domain">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Write problem</b>
+            <input type="text" name="problem" id="problem">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form>
+                <input type="button" class="button" name="click!" onclick="window.location='task/'+document.getElementById('domain').value + '/' + document.getElementById('problem').value;return false;"/>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<a href="/"> "Здесь лежит граф" </a>
